@@ -1,23 +1,16 @@
 {
   "name": "ukulima-frontend",
   "version": "1.0.0",
-  "description": "Frontend for Ukulima Biashara - Agricultural Marketplace",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "vercel-build": "next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "axios": "^1.5.0",
-    "lucide-react": "^0.294.0",
-    "react-hot-toast": "^2.4.1",
-    "socket.io-client": "^4.7.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.0",
@@ -27,8 +20,5 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "typescript": "^5.0.0"
-  },
-  "engines": {
-    "node": ">=18.0.0"
   }
 }
