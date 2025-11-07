@@ -6,6 +6,7 @@ import { useAuth } from '../contexts/AuthContext';
 export default function Home() {
   const { user } = useAuth();
 
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100">
       {/* Hero Section */}
