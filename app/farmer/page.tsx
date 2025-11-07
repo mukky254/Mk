@@ -5,10 +5,10 @@ import Link from 'next/link';
 export default function FarmerDashboard() {
   return (
     <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900">Farmer Dashboard</h1>
-          <p className="text-gray-600">Manage your products and orders</p>
+          <p className="text-gray-600">Manage your farm products</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
@@ -34,10 +34,10 @@ export default function FarmerDashboard() {
                 Add New Product
               </Link>
               <Link href="/products" className="block w-full bg-blue-600 text-white text-center py-3 px-4 rounded-lg hover:bg-blue-700 transition duration-200">
-                View My Products
+                View Products
               </Link>
               <Link href="/orders" className="block w-full bg-purple-600 text-white text-center py-3 px-4 rounded-lg hover:bg-purple-700 transition duration-200">
-                Manage Orders
+                View Orders
               </Link>
             </div>
           </div>
