@@ -1,19 +1,12 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import './globals.css';
-import { AuthProvider } from '@/contexts/AuthContext';
-import Header from '@/components/common/Header';
-import Footer from '@/components/common/Footer';
-
-const inter = Inter({ 
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { AuthProvider } from '../contexts/AuthContext';
+import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
 
 export const metadata: Metadata = {
   title: 'Ukulima Biashara - Connect Farmers to Markets',
   description: 'Agricultural marketplace connecting farmers, wholesalers, and retailers in Kenya',
-  keywords: 'farmers, agriculture, Kenya, marketplace, fresh produce',
 };
 
 export default function RootLayout({
@@ -22,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body className="bg-gray-50 text-gray-900 antialiased">
+    <html lang="en">
+      <body className="bg-gray-50 text-gray-900">
         <AuthProvider>
           <div className="min-h-screen flex flex-col">
             <Header />
