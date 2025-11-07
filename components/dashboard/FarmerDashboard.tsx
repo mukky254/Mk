@@ -277,3 +277,23 @@ const FarmerDashboard = () => {
           
           <div className="text-center p-6 bg-blue-50 rounded-2xl">
             <div className="text-3xl font-bold text-blue-600 mb-2">
+              {products.length > 0 ? Math.round(stats.totalViews / products.length) : 0}
+            </div>
+            <p className="text-blue-700 font-semibold">Avg. Views per Product</p>
+            <p className="text-blue-600 text-sm">Total: {stats.totalViews} views</p>
+          </div>
+          
+          <div className="text-center p-6 bg-purple-50 rounded-2xl">
+            <div className="text-3xl font-bold text-purple-600 mb-2">
+              {orders.length > 0 ? Math.round((orders.filter(o => o.status === 'delivered').length / orders.length) * 100) : 0}%
+            </div>
+            <p className="text-purple-700 font-semibold">Delivery Success</p>
+            <p className="text-purple-600 text-sm">{orders.filter(o => o.status === 'delivered').length} completed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FarmerDashboard;
