@@ -1,4 +1,3 @@
-
 // Mock API functions for demo
 export const authAPI = {
   login: async (email: string, password: string) => {
